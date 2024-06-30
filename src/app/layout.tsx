@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Build Your Dreams with Applift",
   description: "Next generation software development and cutting edge engineering.",
+  "facebook-domain-verification" : "g2ev8eizsnddpsoizac3j7px7u3zkj"
 };
 
 export default function RootLayout({
