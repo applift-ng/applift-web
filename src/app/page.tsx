@@ -20,7 +20,7 @@ export default function Home() {
         <div className="text-white my-10">
         We are under construction
       </div>
-      <div className="w-[100vw] flex flex-row justify-center -z-50">
+      <div className="w-[100vw] flex flex-row justify-center items-center -z-50">
       <div className="box1 rotate-45"></div>
       </div>
     
