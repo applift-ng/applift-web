@@ -23,7 +23,7 @@ export default function Home() {
         </h1>
         <p className="text-md">
           Our new site is on the way!<br></br> In the meantime, you can reach us
-          at <span className="text-[#86C7FE]">hello@applift.com</span>.{" "}
+          at <span className="text-[#86C7FE]">hello@applift.xyz</span>.{" "}
           <br></br> Thanks for your patience.
         </p>
         <div className="dcr_line">
