@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col pt-10 items-center w-[100vw] h-[100vh] overflow-hidden">
       <Image
-        src="/appliftlogo.png"
+        src="/appliftlogo.jpg"
         alt="Applift"
         height={100}
         width={100}
