@@ -17,17 +17,17 @@ export default function Home() {
         height={100}
         width={200}
       ></Image>
-      <section className="w-full text-white px-5 text-center relative">
+      <section className="w-full text-white px-5 text-center relative font-semibold">
         <h1 className="text-2xl mt-5">
           We're Under <br></br>Construction
         </h1>
-        <p className="text-md">
+        <p className="text-md font-medium">
           Our new site is on the way!<br></br> In the meantime, you can reach us
-          at <span className="text-[#86C7FE]">hello@applift.xyz</span>.{" "}
+          at <a className="text-[#86C7FE]" href="mailto:hello@applift.xyz">hello@applift.xyz</a>
           <br></br> Thanks for your patience.
         </p>
         <div className="dcr_line">
-          <div className="w-full overflow-hidden flex flex-row items-center">
+          <div className="w-full overflow-hidden flex flex-row items-center scroller">
             <WIP></WIP>
             <WIP></WIP>
             <WIP></WIP>

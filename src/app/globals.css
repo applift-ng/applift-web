@@ -107,3 +107,16 @@
     /* left: -10px */
   }
 };
+
+.scroller {
+  animation: horizontal-scroll 20s linear infinite;
+}
+
+@keyframes horizontal-scroll {
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: -100%;
+  }
+}
