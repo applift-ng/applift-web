@@ -8,7 +8,8 @@ export const metadata = {
   title: "Build Your Dreams with Applift",
   description: "Next generation software development and cutting edge engineering.",
   other: {
-  "facebook-domain-verification" : "g2ev8eizsnddpsoizac3j7px7u3zkj"
+  "facebook-domain-verification" : "g2ev8eizsnddpsoizac3j7px7u3zkj",
+  "google-site-verification": "DgrP9wg6NhrVCjT99JhgCtbyCYekGgL1oePflPJ_Lsg"
   }
 };
 
