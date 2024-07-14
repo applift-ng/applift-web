@@ -9,7 +9,7 @@ export default function Home() {
         alt="Applift"
         height={100}
         width={100}
-        className="dark:invert mb-5"
+        className="mb-5"
       ></Image>
       <Image
         src="/software-illustration.png"
