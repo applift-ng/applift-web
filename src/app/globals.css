@@ -12,4 +12,97 @@
   height: 1000px;
   width: 1000px;
   position: relative;
+  transform: rotate(45deg);
 }
+.box2 {
+  background-color: black;
+  width: 100vw;
+  height: 1000px;
+  position: relative;
+  top: -310px
+}
+@media (max-width: 600px) {
+  .dcr_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(-45deg);
+    background-color: #CCFF6F;
+    height: 40px;
+    width: 1000px;
+    z-index: 50;
+    position: absolute;
+    left: -150px;
+    bottom: -150px;
+  }
+  .dcr_line2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(30deg);
+    background-color: #CCFF6F;
+    height: 40px;
+    width: 1000px;
+    z-index: 50;
+    position: absolute;
+    left: -450px;
+    bottom: -150px;
+  }
+}
+.dcr_line{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  transform: rotate(-20deg);
+  background-color: #CCFF6F;
+  height: 40px;
+  width: 2000px;
+  z-index: 50;
+  position: absolute;
+  bottom: -200px;
+}
+.dcr_line2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  transform: rotate(15deg);
+  background-color: #CCFF6F;
+  height: 40px;
+  width: 2000px;
+  z-index: 50;
+  position: absolute;
+  bottom: -300px;
+  left: -70px;
+}
+
+.box3, .box4{
+  background-color: black;
+  width: 2000px !important;
+  height: 1000px;
+  position: relative;
+  top: 60px;
+}
+.box3{
+  transform: rotate(-21deg);
+  right: -200px
+}
+.box4{
+  transform: rotate(21deg);
+  left: -200px;
+}
+
+@media (max-width: 600px) {
+  .box1{
+    height: calc(70vw/0.525);
+    width: calc(70vw/0.525);
+    position: relative;
+    top: -120px;
+    /* left: -10px */
+  }
+};
