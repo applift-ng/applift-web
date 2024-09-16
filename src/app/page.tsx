@@ -1,64 +1,81 @@
+import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
 import Image from "next/image";
-import { WIP } from "./components/WIP";
 
 export default function Home() {
   return (
-    <main className="flex flex-col pt-10 items-center w-[100vw] h-[100vh] overflow-hidden">
-      <Image
-        src="/appliftlogo.jpg"
-        alt="Applift"
-        height={100}
-        width={100}
-        className="mb-5"
-      ></Image>
-      <Image
-        src="/software-illustration.png"
-        alt="Illustrate"
-        height={100}
-        width={200}
-      ></Image>
-      <section className="w-full text-white px-5 text-center relative font-semibold">
-        <h1 className="text-2xl mt-5">
-          We're Under <br></br>Construction
-        </h1>
-        <p className="text-md font-medium">
-          Our new site is on the way!<br></br> In the meantime, you can reach us
-          at <a className="text-[#86C7FE]" href="mailto:hello@applift.xyz">hello@applift.xyz</a>
-          <br></br> Thanks for your patience.
-        </p>
-        <div className="dcr_line">
-          <div className="w-full overflow-hidden flex flex-row items-center scroller">
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
+    <div className="flex flex-col gap-10">
+      <Hero />
+      <section className="bg-applift-grey w-full flex flex-col gap-20  px-3 py-3 md:py-20 md:px-20 relative md:h-[90vh]">
+        <Image
+          src="/lines.png"
+          width={500}
+          height={500}
+          className="md:w-2/5 w-full md:h-full h-[80vh] -left-[60%] -z-0 top-20 md:top-0 md:left-0 absolute"
+          alt=""
+        />
+        <article className="text-white flex w-full">
+          <section className="flex justify-end  w-full">
+            <h2 className="font-orelega-one w-[90%] md:w-2/5 text-right self-end justify-end font-medium text-3xl md:text-4xl">
+              Transform Your Vision into Reality with Applift's Expert Solutions
+            </h2>
+          </section>
+        </article>
 
-          </div>
-        </div>
-        <div className="dcr_line2">
-        <div className="w-full overflow-hidden flex flex-row items-center ">
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-            <WIP></WIP>
-
-          </div>
-        </div>
+        <section className="flex flex-col md:flex-row gap-10 rounded-xl md:justify-end pt-[180px] md:pt-5 md:pl-[400px] p-5 bg-[#4D4D4D] md:h-[240px] text-white relative z-10">
+          <Image
+            src="/proudman.png"
+            width={1000}
+            height={1000}
+            className="md:w-[340px] md:h-[400px] md:scale-100 scale-[0.70] absolute  -top-1/4 md:top-auto left-5 md:bottom-0 "
+            alt=""
+          />
+          <section className="flex z-20 flex-col gap-5 rounded-xl bg-[#686868]  w-full lg:w-[300px] p-3">
+            <h3 className="text-xl py-2 border-b border-b-applift-green">
+              Our Vision
+            </h3>
+            <p className="">
+              We strive to be at the forefront of digital transformation,
+              delivering custom software that meets the unique needs of our
+              clients.
+            </p>
+          </section>
+          <section className="flex flex-col md:h-full overflow-hidden relative gap-3 cut-box w-full lg:w-[400px] ">
+            <div className="bg-[#4D4D4D] md:pt-0  flex justify-end pt-[8.2rem] h-full ">
+              <div className="absolute rotate-[10deg] top-5 -left-2  z-0 bg-white">
+                <Marquee>
+                  <span className="flex gap-4">
+                    Our Mission
+                    <Image
+                      width={20}
+                      height={40}
+                      src="/WIPStar.png"
+                      alt={"Star"}
+                    />
+                  </span>
+                </Marquee>
+              </div>
+              <div className="absolute -rotate-[20deg] top-0 -left-5  z-0 bg-white">
+                <Marquee>
+                  <span className="flex gap-4">
+                    Our Mission
+                    <Image
+                      width={20}
+                      height={40}
+                      src="/WIPStar.png"
+                      alt={"Star"}
+                    />
+                  </span>
+                </Marquee>
+              </div>
+              <article className="bg-[#4D4D4D] -mt-5  h-full flex items-end p-3">
+                Our mission is to empower businesses with innovative technology
+                solutions that drive growth and operational efficiency.
+              </article>
+            </div>
+          </section>
+        </section>
       </section>
-      <div className="sm:hidden w-[100vw] relative -top-[4.5rem] flex flex-col justify-center items-center -z-50">
-        <div className="box1"></div>
-        <div className="box2"></div>
-      </div>
-      <div className=" w-auto relative  flex flex-row justify-center items-center -z-50">
-        <div className="box3 "></div>
-        <div className="box4"></div>
-      </div>
-    </main>
+    </div>
   );
 }
