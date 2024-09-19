@@ -51,9 +51,7 @@ const WhatWeDo = () => {
         scrub: true, // Smooth animation
         pinSpacing: true,
         pin: ".whatwedo", // Pin the section in place during the scroll
-        markers: {
-          fontSize: "0px",
-        },
+
         onLeave: () => {
           // This callback ensures the content below starts after scroll ends
           gsap.to(".vision", { opacity: 1, duration: 1, delay: 0.5 });
@@ -72,7 +70,7 @@ const WhatWeDo = () => {
             gsap.to(
               [currentHead.current, currentDesc.current, currentImg.current],
               {
-                opacity: 0,
+                opacity: 1,
                 duration: 0.5,
                 onComplete: () => {
                   // Once fade-out is complete, update the current index and fade-in the new content
@@ -160,7 +158,7 @@ const WhatWeDo = () => {
 
           <article className="w-full  my-4">
             <div className="flex border-t border-t-applift-blue border-b border-b-applift-blue w-full">
-              <h2 className="bg-applift-blue after:w-full after:h-[70px] after:absolute after:top-2 after:left-2 after:-z-10 my-5 after:bg-black relative text-white  text-3xl h-[70px] flex items-center px-4">
+              <h2 className="bg-applift-blue after:w-full  w-full after:h-[70px] after:absolute after:top-2 after:left-2 after:-z-10 my-5 after:bg-black relative text-white  text-3xl h-[70px] flex items-center px-4">
                 <span ref={currentHead}>
                   {services[currentIndexRef.current].name}
                 </span>

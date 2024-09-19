@@ -13,7 +13,7 @@ const OurProjects = () => {
         className="w-full top-0 left-0 h-full absolute"
         alt=""
       />
-      <section className="w-full my-6 gap-10 projects grid">
+      <section className="w-full my-6 gap-10 relativez z-0 projects grid">
         <Project
           theme="#136BF0"
           img="/catura.png"
@@ -38,7 +38,7 @@ const OurProjects = () => {
           className="finburg"
           name="Finburg"
         />
-        <section className="w-[120px] justify-self-end flex justify-center items-center flex-col  z-10 hexagon-clip bg-applift-green text-black h-[100px]">
+        <section className="w-[120px] justify-self-end flex justify-center items-center flex-col hexagon-clip bg-applift-green text-black h-[100px] after:w-full after:z-10 z-40 after:h-full  after:top-3 after:right-2 after:hexagon-clip after:absolute relative cursor-pointer">
           <span className="rotate-[45deg]">
             <HiOutlineArrowUp size={40} />
           </span>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Project = ({
   img,
   name,
@@ -13,7 +15,9 @@ const Project = ({
     <section
       className={`${className}  rounded-md cursor-pointer overflow-hidden flex justify-center z-20 items-center relative h-[250px]`}
     >
-      <img
+      <Image
+        width={200}
+        height={200}
         className="w-full -z-10 absolute object-cover  h-full"
         src={img}
         alt=""

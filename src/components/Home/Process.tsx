@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const OurProcess = () => {
   const steps = [
     { name: "Discovery and Planning", Image: "/discovery.png" },
@@ -16,7 +18,13 @@ const OurProcess = () => {
             key={index}
             className="flex flex-col justify-between gap-5 md:gap-10"
           >
-            <img src={step.Image} alt={step.name} className="w-1/3" />
+            <Image
+              width={200}
+              height={200}
+              src={step.Image}
+              alt={step.name}
+              className="w-1/3"
+            />
             <article className="flex flex-col gap-5">
               <h3 className="">{step.name}</h3>
             </article>
