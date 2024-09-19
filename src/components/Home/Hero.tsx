@@ -1,5 +1,4 @@
-import Link from "next/link";
-import DarkBgLink from "./DarkBgLink";
+import DarkBgLink from "../DarkBgLink";
 import Image from "next/image";
 
 const Hero = () => {
