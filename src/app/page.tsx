@@ -1,4 +1,6 @@
 import Hero from "@/components/Home/Hero";
+import OurProjects from "@/components/Home/OurProject";
+import OurProcess from "@/components/Home/Process";
 import VisionHero from "@/components/Home/Vision";
 import WhatWeDo from "@/components/Home/WhatWeDo";
 
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <VisionHero />
       <WhatWeDo />
+      <OurProcess />
+      <OurProjects />
     </div>
   );
 }

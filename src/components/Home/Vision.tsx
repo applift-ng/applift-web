@@ -3,7 +3,7 @@ import Marquee from "../Marquee";
 
 const VisionHero = () => {
   return (
-    <section className="bg-applift-grey w-full flex flex-col gap-20  px-3 py-3 md:py-20 md:px-20 relative md:h-[90vh]">
+    <section className="vision bg-applift-grey w-full flex flex-col gap-20  px-3 py-3 md:py-20 md:px-20 relative md:h-[90vh]">
       <Image
         src="/lines.png"
         width={500}
