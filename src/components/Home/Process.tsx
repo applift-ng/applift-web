@@ -10,13 +10,13 @@ const OurProcess = () => {
     { name: "Many More", Image: "/discovery.png" },
   ];
   return (
-    <section className="flex flex-col gap-10 md:p-16">
+    <section className="flex flex-col gap-10 p-10 md:p-16">
       <h1 className="text-4xl font-orelega-one">Our Process</h1>
       <section className="grid grid-cols-1 md:grid-cols-3 items-center gap-40 justify-between">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between gap-5 md:gap-10"
+            className="flex flex-col items-center md:justify-between gap-5 md:gap-10"
           >
             <Image
               width={200}

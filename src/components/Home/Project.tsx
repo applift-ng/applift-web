@@ -13,7 +13,7 @@ const Project = ({
 }) => {
   return (
     <section
-      className={`${className}  rounded-md cursor-pointer overflow-hidden flex justify-center z-20 items-center relative h-[250px]`}
+      className={`${className}  rounded-md cursor-pointer overflow-hidden flex justify-center z-20 items-center relative h-[200px]`}
     >
       <Image
         width={200}
