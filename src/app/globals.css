@@ -41,6 +41,13 @@
     display: grid;
     grid-template-areas: "catura catura catura catura catura edutech edutech" "logistics logistics finburg finburg finburg finburg seemore";
   }
+  @media (max-width: 600px) {
+    .projects {
+      display: grid;
+      grid-template-areas: "catura catura catura catura catura catura catura" "edutech edutech edutech edutech edutech edutech edutech" "logistics logistics logistics logistics logistics logistics logistics" "finburg finburg finburg finburg finburg finburg finburg" "seemore seemore seemore seemore seemore seemore seemore";
+    }
+  }
+
   .catura {
     grid-area: catura;
   }
